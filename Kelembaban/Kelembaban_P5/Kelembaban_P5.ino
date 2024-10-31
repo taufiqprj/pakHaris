@@ -2,6 +2,8 @@ const int sensor_pin = A0;   // Pin sensor kelembaban tanah
 const int relay_pin = 7;     // Pin relay (gunakan pin digital)
 
 int _moisture, sensor_analog;
+
+////UBAH NIlAI PARAMETER KELEMBABAN DISINI
 const int moisture_threshold = 30;  // Ambang batas kelembaban 30%
 
 void setup(void) {
