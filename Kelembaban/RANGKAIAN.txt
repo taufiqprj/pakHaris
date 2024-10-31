@@ -1,0 +1,4 @@
+VCC Sensor → 5V Arduino Nano
+GND Sensor → GND Arduino Nano
+Signal Sensor → Pin A0 Arduino Nano
+Relay → Pin D7 Arduino
