@@ -1,4 +1,5 @@
-const int MQ2_ANALOG_PIN = A0;
+const int MQ2_ANALOG_PIN = A1; //PIN A0 SENSOR MQ
+const int MQ2_DIGITAL_PIN = 2; //PIN D0 SENSOR MQ
 const int LED_PIN = 3;
 const int BUZZER_PIN = 4;
 const int RELAY_PIN = 5;
