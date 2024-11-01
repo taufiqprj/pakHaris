@@ -9,7 +9,7 @@ const int moisture_threshold = 30;  // Ambang batas kelembaban 30%
 void setup(void) {
   Serial.begin(9600);        // Inisialisasi komunikasi serial
   pinMode(relay_pin, OUTPUT);// Set pin relay sebagai OUTPUT
-  digitalWrite(relay_pin, HIGH);  // Relay awal dalam keadaan mati (LOW aktif)
+  digitalWrite(relay_pin, LOW);  // Relay awal dalam keadaan mati (LOW aktif)
 }
 
 void loop(void) {
@@ -24,10 +24,10 @@ void loop(void) {
   
   // Kontrol relay berdasarkan kelembaban
   if (_moisture < moisture_threshold) {
-    digitalWrite(relay_pin, LOW);  // Nyalakan relay
+    digitalWrite(relay_pin, HIGH);  // Nyalakan relay
     Serial.println("Pompa Air Menyala - Tanah Kering!");
   } else {
-    digitalWrite(relay_pin, HIGH); // Matikan relay
+    digitalWrite(relay_pin, LOW); // Matikan relay
     Serial.println("Pompa Air Mati - Kelembaban Cukup");
   }
   
